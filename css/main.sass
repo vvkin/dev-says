@@ -2,27 +2,28 @@
 @import reset
 @import fonts
 
+.page-section
+  padding: 0 165px
+  font-family: 'Roboto'
+  font-size: 16px
+  clip-path: polygon(0 0, 100% 0, 100% 81%, 0 100%)
+  @media screen and (max-width: 768px)
+    padding: 0 35px
+
 .intro
-  padding: 0 12%
+  padding-bottom: 420px
   background-color: $black
+  color: $light-gray
 
 .header
   display: flex
   align-items: center
   justify-content: space-between
-  padding: 35px 0
-  color: $light-gray
-  font-family: 'Roboto'
-  font-size: 16px
+  padding-top: 35px
  
 .header__logo
   font-family: 'Bebas Neue'
   font-size: 24px
-
-@media (min-width: 1100px)    
-  .header__lang
-    display: none
-
 
 .menu
   display: flex
@@ -30,7 +31,9 @@
   align-items: flex-start
 
 .menu__item
-  margin: 0 35px
+  margin: 0 45px
+  @media screen and (max-width: 1200px)
+    margin: 0 25px
 
 .header__extra
   display: flex
@@ -46,18 +49,36 @@
   margin-left: 30px
   cursor: pointer
 
+@media screen and (max-width: 992px)
+  .header__menu, .header__lang
+    display: none
+
+  .header__burger
+    display: inline-block
+
+.button
+  color: $light-gray
+  cursor: pointer
+
 .sign-in
   padding: 8px 30px
   border-radius: 30px
   background-color: $blue
-  text-align: center
-  color: $light-gray
-  font-size: 16px
-  cursor: pointer
 
-@media screen and (max-width: 1048px )
-  .header__menu, .header__lang
-    display: none
-  
-  .header__burger
-    display: inline-block
+.sign-up
+  padding: 16px 32px
+  border-radius: 28px
+  background-color: $green
+
+.heading
+  text-align: center
+  margin-top: 160px
+
+.heading__title
+  font-family: 'Bebas Neue'
+  font-size: 60px
+  @media screen and (max-width: 476px)
+    font-size: 48px
+    
+.heading__text
+  margin: 25px 0
