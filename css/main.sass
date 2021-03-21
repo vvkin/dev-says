@@ -3,7 +3,7 @@
 @import fonts
 
 .intro
-  padding: 0 165px
+  padding: 0 12%
   background-color: $black
 
 .header
@@ -19,19 +19,32 @@
   font-family: 'Bebas Neue'
   font-size: 24px
 
-.he
+@media (min-width: 1100px)    
+  .header__lang
+    display: none
 
-.header__menu
-  ul
-    display: flex
-    flex-direction: row
-    align-items: flex-start
-  li
-    margin: 0 45px
 
+.menu
+  display: flex
+  flex-direction: row
+  align-items: flex-start
+
+.menu__item
+  margin: 0 35px
+
+.header__extra
+  display: flex
+  align-items: center
+  flex-direction: row
+  
 .header__lang
   display: inline-block
   margin-right: 20px
+
+.header__burger
+  display: none
+  margin-left: 30px
+  cursor: pointer
 
 .sign-in
   padding: 8px 30px
@@ -41,3 +54,10 @@
   color: $light-gray
   font-size: 16px
   cursor: pointer
+
+@media screen and (max-width: 1048px )
+  .header__menu, .header__lang
+    display: none
+  
+  .header__burger
+    display: inline-block
