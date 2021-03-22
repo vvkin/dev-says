@@ -9,6 +9,10 @@ html
   font-family: 'Bebas Neue'
   font-size: 42px
 
+.pre-heading-font
+  font-family: 'Bebas Neue'
+  font-size: 32px
+
 .page-section
   padding: 0 150px
   font-family: 'Roboto'
@@ -126,7 +130,7 @@ html
 
 .examples
   background-color: $black
-  //clip-path: polygon(0 160px, 100% 0, 100% calc(100% - 160px), 0 100%)
+  clip-path: polygon(0 160px, 100% 0, 100% calc(100% - 160px), 0 100%)
 
 .examples__item
   display: flex
@@ -170,3 +174,56 @@ html
 
 .promotion__title
   margin-bottom: 50px
+
+.footer
+  padding-top: 90px
+  padding-bottom: 90px
+  background-color: $light-gray
+
+.footer__top
+  display: flex
+  flex-wrap: wrap
+  gap: 90px
+  justify-content: space-around
+
+.footer__title
+  text-align: center
+
+.socials
+  display: flex
+  justify-content: center
+  column-gap: 20px
+  padding: 20px 0
+
+.links
+  display: flex
+  justify-content: space-around
+  flex-wrap: wrap
+  gap: 45px 65px
+  font-size: 18px
+  color: $black
+    
+.links__item
+  margin-bottom: 15px
+
+.links__list
+  text-align: center
+  @media screen and (max-width: 476px)
+    width: 250px
+
+.links__title
+  font-weight: bold
+
+.footer__divider
+  width: 100%
+  border: 0.75px solid $green
+  margin: 90px 0 30px 0
+
+.footer__bottom
+  display: flex
+  justify-content: space-between
+  align-items: center
+  .button
+    background-color: $green
+
+  
