@@ -5,18 +5,22 @@
 html
   background-color: $light-gray
 
+.heading-font
+  font-family: 'Bebas Neue'
+  font-size: 42px
+
 .page-section
-  padding: 0 165px
+  padding: 0 150px
   font-family: 'Roboto'
   font-size: 16px
-  @media screen and (max-width: 768px)
+  @media screen and (max-width: 992px)
     padding: 0 35px
 
 .intro
   padding-bottom: 420px
   background-color: $black
   color: $light-gray
-  clip-path: polygon(0 0, 100% 0, 100% 81%, 0 100%)
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 160px), 0 100%)
 
 .header
   display: flex
@@ -58,6 +62,9 @@ html
 
   .header__burger
     display: inline-block
+
+.cross-outed
+  text-decoration: line-through
 
 .button
   color: $light-gray
@@ -102,12 +109,12 @@ html
 
 .reasons__list
   display: flex
-  flex-direction: row
-  justify-content: space-between
+  justify-content: space-around
   flex-wrap: wrap
 
 .reasons__item
-  width: 300px
+  flex: 1 0 calc(33% - 65px) // 3 per row, 65px margin
+  min-width: 300px
   margin-bottom: 90px
   text-align: center
   @media screen and (max-width: 1100px)
@@ -118,6 +125,48 @@ html
   margin: 15px 0
 
 .examples
-  height: 500px
   background-color: $black
-  clip-path: polygon(0 19%, 100% 0, 100% 100%, 0% 100%)
+  //clip-path: polygon(0 160px, 100% 0, 100% calc(100% - 160px), 0 100%)
+
+.examples__item
+  display: flex
+  flex-wrap: wrap-reverse
+  justify-content: center
+  column-gap: 65px
+  margin-top: 250px
+  color: $light-gray
+  &:first-of-type
+    transform: translateY(-300px)
+    margin-bottom: -300px
+    color: $black
+  &:nth-of-type(even)
+    flex-direction: row-reverse
+
+.examples__img
+  flex: 0
+
+.examples__content
+  flex: 1
+  min-width: 250px
+  max-width: 665px
+  margin-bottom: 45px
+  
+.examples__text
+  font-size: 20px
+
+.examples__title
+  color: $blue
+  margin-bottom: 30px
+
+@media screen and (max-width: 768px)
+  .examples__img, .examples__content
+    width: calc(100vw - 70px)
+
+.promotion
+  margin: 0 auto
+  padding: 150px 0
+  text-align: center
+  color: $light-gray
+
+.promotion__title
+  margin-bottom: 50px
