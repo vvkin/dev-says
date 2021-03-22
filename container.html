@@ -1,10 +1,125 @@
 <!doctype html>
 <html>
   <head>
-    <title>DevSays</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <link rel="stylesheet" href="css/main.css">
+    <title>DevSays</title>
   </head>
   <body>
-      <h1>DevSays ContainerPage</h1>
+    <section class="intro page-section">
+      <header class="header">
+        <div class="header__logo">
+          <h1>DevSays</h1>
+        </div>
+        <nav class="header__menu">
+          <ul class="menu">
+            <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">News</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Support</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">About</a></li>
+          </ul>
+        </nav>
+        <div class="header__extra">
+          <div class="header__lang">
+            <span class="fas"></span>&nbsp;
+            <span class="lang">EN</span>&nbsp;
+            <span class="fas"></span>
+          </div>
+          <button class="button sign-in">Sign in</button>
+          <img class="header__burger" src="img/svg/burger.svg" alt="Menu button" />
+        </div>
+      </header>
+      <section class="news">
+        <h2 class="news__title heading-font">DevSays news</h2>
+        <div class="news__item">
+          <img src="img/news-item-lock.png" alt="Private posts" class="news__img">
+          <div class="news__body">
+            <h3 class="news__title">Private posts, bookmarks and expiring links</h3>
+            <p class="news__text">
+              With private posts users become capable to create hidden 
+              posts which will be available only via the invite link. 
+              Invite links have a lifetime that can be ...
+            </p>
+            <p class="news__date">Feb 26, 2021</p>
+          </div>
+        </div>
+        <div class="news__item">
+          <img src="img/news-item-share.png" alt="Code snippets" class="news__img">
+          <div class="news__body">
+            <h3 class="news__title">Code snippets, code change requests</h3>
+            <p class="news__text">
+              With this update comes the ability to inject code snippets directly into the body of posts. 
+              Also, a mechanism for executing the code and making edits has been ...
+            </p>
+            <p class="news__date">Jan 16, 2021</p>
+          </div>
+        </div>
+        <div class="news__item">
+          <img src="img/news-item-lock.png" alt="Posts" class="news__img">
+          <div class="news__body">
+            <h3 class="news__title">Private posts, bookmarks and expiring links</h3>
+            <p class="news__text">
+              With private posts users become capable to create hidden 
+              posts which will be available only via the invite link. 
+              Invite links have a lifetime that can be ...
+            </p>
+            <p class="news__date">Feb 26, 2021</p>
+          </div>
+        </div>
+        <div class="news__item">
+          <img src="img/news-item-share.png" alt="Code snippets" class="news__img">
+          <div class="news__body">
+            <h3 class="news__title">Code snippets, code change requests</h3>
+            <p class="news__text">
+              With this update comes the ability to inject code snippets directly into the body of posts. 
+              Also, a mechanism for executing the code and making edits has been ...
+            </p>
+            <p class="news__date">Jan 16, 2021</p>
+          </div>
+        </div>
+      </section>
+      <div class="button-wrapper">
+        <button class="button sign-up">Older news</button>
+      </div>
+    </section>
+    <footer class="footer page-section">
+      <div class="footer__top">
+        <div class="footer__left">
+           <h3 class="footer__title pre-heading-font">For developers by developers</h3>
+          <div class="socials">
+            <img src="img/svg/github.svg" alt="GitHub" class="socials__item">
+            <img src="img/svg/twitter.svg" alt="Twitter" class="socials__item">
+            <img src="img/svg/telegram.svg" alt="Telegram" class="socials__item">
+          </div>
+        </div>
+        <div class="links">
+          <ul class="links__list">
+            <li class="links__item"><a href="#" class="links__title">Product</a></li>
+            <li class="links__item"><a href="#" class="links__text">Features</a></li>
+            <li class="links__item"><a href="#" class="links__text">Status</a></li>
+            <li class="links__item"><a href="#" class="links__text">Download</a></li>
+          </ul>
+          <ul class="links__list">
+            <li class="links__item"><a href="#" class="links__title">Resources</a></li>
+            <li class="links__item"><a href="#" class="links__text">Support</a></li>
+            <li class="links__item"><a href="#" class="links__text">Feedback</a></li>
+            <li class="links__item"><a href="#" class="links__text">Devolopers</a></li>
+          </ul>
+          <ul class="links__list">
+            <li class="links__item"><a href="#" class="links__title">Download</a></li>
+            <li class="links__item"><a href="#" class="links__text">Windows</a></li>
+            <li class="links__item"><a href="#" class="links__text">macOS</a></li>
+            <li class="links__item"><a href="#" class="links__text">Linux</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__divider"></div>
+      <div class="footer__bottom">
+        <h2 class="footer__logo pre-heading-font">DevSays</h2>
+        <button class="button sign-in">Sign in</button>
+      </div>
+    </footer>
   </body>
 </html>

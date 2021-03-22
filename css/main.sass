@@ -130,6 +130,7 @@ html
 
 .examples
   background-color: $black
+  position: relative
   clip-path: polygon(0 160px, 100% 0, 100% calc(100% - 160px), 0 100%)
 
 .examples__item
@@ -183,15 +184,21 @@ html
 .footer__top
   display: flex
   flex-wrap: wrap
+  justify-content: space-between
   gap: 90px
-  justify-content: space-around
 
+@media screen and (max-width: 1200px)
+  .footer__top
+    flex-direction: column
+    align-items: center
+  .socials
+    justify-content: center
+    
 .footer__title
   text-align: center
 
 .socials
   display: flex
-  justify-content: center
   column-gap: 20px
   padding: 20px 0
 
@@ -202,14 +209,12 @@ html
   gap: 45px 65px
   font-size: 18px
   color: $black
+  @media screen and (max-width: 476px)
+    flex-direction: column
+    text-align: center
     
 .links__item
   margin-bottom: 15px
-
-.links__list
-  text-align: center
-  @media screen and (max-width: 476px)
-    width: 250px
 
 .links__title
   font-weight: bold
@@ -225,5 +230,12 @@ html
   align-items: center
   .button
     background-color: $green
+
+.header__extra
+  .sign-in
+    background-color: $green
+
+.news
+  padding: 65px 95px
 
   
