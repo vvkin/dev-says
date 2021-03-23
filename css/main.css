@@ -72,10 +72,6 @@ ol, ul {
   font-weight: 900;
 }
 
-html {
-  background-color: #F1F0EA;
-}
-
 .heading-font {
   font-family: 'Bebas Neue';
   font-size: 42px;
@@ -84,6 +80,42 @@ html {
 .pre-heading-font {
   font-family: 'Bebas Neue';
   font-size: 32px;
+}
+
+.cross-out-font {
+  text-decoration: line-through;
+}
+
+.btn-blue, .btn-green,
+.btn-sm, .btn-lg {
+  font-family: 'Roboto';
+  font-size: 16px;
+  color: #F1F0EA;
+  cursor: pointer;
+}
+
+.btn-sm {
+  padding: 8px 30px;
+  border-radius: 30px;
+  max-height: 35px;
+}
+
+.btn-lg {
+  padding: 16px 32px;
+  border-radius: 28px;
+  max-height: 55px;
+}
+
+.btn-blue {
+  background-color: #2378A9;
+}
+
+.btn-green {
+  background-color: #25BB41;
+}
+
+html {
+  background-color: #F1F0EA;
 }
 
 .page-section {
@@ -154,10 +186,6 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
 }
 
 .header__lang {
@@ -178,27 +206,6 @@ html {
   .header__burger {
     display: inline-block;
   }
-}
-
-.cross-outed {
-  text-decoration: line-through;
-}
-
-.button {
-  color: #F1F0EA;
-  cursor: pointer;
-}
-
-.sign-in {
-  padding: 8px 30px;
-  border-radius: 30px;
-  background-color: #2378A9;
-}
-
-.sign-up {
-  padding: 16px 32px;
-  border-radius: 28px;
-  background-color: #25BB41;
 }
 
 .heading {
@@ -222,12 +229,11 @@ html {
 }
 
 .why {
-  padding-bottom: 255px;
   background-color: #F1F0EA;
   color: #080C0B;
 }
 
-.why__intro {
+.why__heading {
   text-align: center;
   padding: 30px 0 40px 0;
 }
@@ -313,13 +319,13 @@ html {
   margin-bottom: 45px;
 }
 
-.examples__text {
-  font-size: 20px;
-}
-
 .examples__title {
   color: #2378A9;
   margin-bottom: 30px;
+}
+
+.examples__text {
+  font-size: 20px;
 }
 
 @media screen and (max-width: 768px) {
@@ -436,14 +442,6 @@ html {
           align-items: center;
 }
 
-.footer__bottom .button {
-  background-color: #25BB41;
-}
-
-.header__extra .sign-in {
-  background-color: #25BB41;
-}
-
 .news {
   background-color: #080C0B;
   color: #F1F0EA;
@@ -451,12 +449,12 @@ html {
           clip-path: polygon(0 0, 100% 0, 100% calc(100% - 160px), 0 100%);
 }
 
-.news__wrapper {
+.news__content {
   padding: 0 95px;
 }
 
 @media screen and (max-width: 1200px) {
-  .news__wrapper {
+  .news__content {
     padding: 0;
   }
 }
