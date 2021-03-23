@@ -595,4 +595,37 @@ html {
   font-size: 12px;
   color: #25BB41;
 }
+
+.news-info {
+  padding-top: 90px;
+  padding-bottom: 60px;
+}
+
+.news-info__item {
+  margin-bottom: 90px;
+}
+
+.news-info__item:last-of-type {
+  margin-bottom: 0;
+}
+
+.news-info__heading {
+  color: #2378A9;
+  margin-bottom: 20px;
+}
+
+.news-info__content {
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.news-extra__date {
+  font-size: 20px;
+  font-style: italic;
+}
+
+.news-extra__button {
+  padding: 50px 0;
+  text-align: center;
+}
 /*# sourceMappingURL=main.css.map */
