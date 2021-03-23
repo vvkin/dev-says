@@ -13,7 +13,7 @@ a {
   color: inherit;
 }
 
-ol, ul {
+ul {
   list-style: none;
 }
 
@@ -118,24 +118,26 @@ html {
   background-color: #F1F0EA;
 }
 
-.page-section {
+.section-black, .section-white {
   padding: 0 150px;
   font-family: 'Roboto';
   font-size: 16px;
 }
 
 @media screen and (max-width: 992px) {
-  .page-section {
+  .section-black, .section-white {
     padding: 0 35px;
   }
 }
 
-.intro {
-  padding-bottom: 420px;
+.section-black {
   background-color: #080C0B;
   color: #F1F0EA;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 160px), 0 100%);
-          clip-path: polygon(0 0, 100% 0, 100% calc(100% - 160px), 0 100%);
+}
+
+.section-white {
+  background-color: #F1F0EA;
+  color: #080C0B;
 }
 
 .header {
@@ -208,29 +210,27 @@ html {
   }
 }
 
-.heading {
+.intro {
+  padding-bottom: 420px;
+  padding-top: 160px;
   text-align: center;
-  margin-top: 160px;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 160px), 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% calc(100% - 160px), 0 100%);
 }
 
-.heading__title {
+.intro__title {
   font-family: 'Bebas Neue';
   font-size: 60px;
 }
 
 @media screen and (max-width: 576px) {
-  .heading__title {
+  .intro__title {
     font-size: 48px;
   }
 }
 
-.heading__text {
+.intro__text {
   margin: 25px 0;
-}
-
-.why {
-  background-color: #F1F0EA;
-  color: #080C0B;
 }
 
 .why__heading {
@@ -269,8 +269,6 @@ html {
 }
 
 .examples {
-  background-color: #080C0B;
-  position: relative;
   -webkit-clip-path: polygon(0 160px, 100% 0, 100% calc(100% - 160px), 0 100%);
           clip-path: polygon(0 160px, 100% 0, 100% calc(100% - 160px), 0 100%);
 }
@@ -338,7 +336,6 @@ html {
   margin: 0 auto;
   padding: 150px 0;
   text-align: center;
-  color: #F1F0EA;
 }
 
 .promotion__title {
@@ -348,7 +345,6 @@ html {
 .footer {
   padding-top: 90px;
   padding-bottom: 90px;
-  background-color: #F1F0EA;
 }
 
 .footer__top {
@@ -403,7 +399,6 @@ html {
       flex-wrap: wrap;
   gap: 45px 65px;
   font-size: 18px;
-  color: #080C0B;
 }
 
 @media screen and (max-width: 576px) {
@@ -425,7 +420,6 @@ html {
 }
 
 .footer__divider {
-  width: 100%;
   border: 0.75px solid #25BB41;
   margin: 90px 0 30px 0;
 }
@@ -443,8 +437,7 @@ html {
 }
 
 .news {
-  background-color: #080C0B;
-  color: #F1F0EA;
+  padding-top: 65px;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 160px), 0 100%);
           clip-path: polygon(0 0, 100% 0, 100% calc(100% - 160px), 0 100%);
 }
@@ -460,7 +453,7 @@ html {
 }
 
 .news__heading {
-  margin: 65px 0;
+  margin-bottom: 65px;
 }
 
 .news__container {
