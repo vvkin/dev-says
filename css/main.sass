@@ -3,7 +3,7 @@
 @import fonts
 @import buttons
 
-html
+body
   background-color: $light-gray
 
 .section-black, .section-white
@@ -29,7 +29,6 @@ html
     position: absolute
     left: 0
     top: -160px
-    display: block
     height: 160px
     width: 100%
     background-color: inherit
@@ -129,7 +128,7 @@ html
   display: flex
   flex-wrap: wrap-reverse
   justify-content: center
-  column-gap: 65px
+  margin-right: -65px
   margin-top: 250px
   color: $light-gray
   &:first-of-type
@@ -148,6 +147,9 @@ html
   min-width: 250px
   max-width: 665px
   margin-bottom: 45px
+
+.examples__img, .examples__content
+  margin-right: 65px
 
 .examples__title
   color: $blue
@@ -176,7 +178,9 @@ html
   display: flex
   flex-wrap: wrap
   justify-content: space-between
-  gap: 90px 165px
+
+.footer__left
+  margin-right: 165px
 
 @media screen and (max-width: 1200px)
   .footer__top
@@ -184,26 +188,34 @@ html
     align-items: center
   .socials
     justify-content: center
+  .footer__left
+    margin-right: 0px
+    margin-bottom: 90px
     
 .footer__title
   text-align: center
 
 .socials
   display: flex
-  column-gap: 20px
   padding: 20px 0
+
+.socials__item
+  margin-right: 20px
 
 .links
   flex: 1
   display: flex
   justify-content: space-between
   flex-wrap: wrap
-  gap: 45px 65px
   font-size: 18px
+  margin: -45px -65px 0 0
   @media screen and (max-width: 476px)
     flex-direction: column
     text-align: center
-    
+
+.links__list
+  margin: 45px 65px 0 0
+
 .links__item
   margin-bottom: 15px
 
@@ -235,10 +247,11 @@ html
   display: flex
   flex-wrap: wrap
   justify-content: space-around
-  gap: 65px 60px
+  margin: -65px -60px 0 0
 
 .news__item
   width: 400px
+  margin: 65px 60px 0 0
   @media screen and (max-width: 576px)
     width: calc(100vw - 70px)
 
@@ -273,13 +286,13 @@ html
 .news-detail
   display: flex
   justify-content: space-between
-  column-gap: 90px
   padding-top: 65px
   padding-bottom: 250px
   clip-path: polygon(0 0, 100% 0, 100% calc(100% - 160px), 0 100%)
 
 .news-detail__content
   width: 665px
+  margin-right: 90px
   @media screen and (max-width: 1200px)
     width: 500px
 
@@ -300,9 +313,12 @@ html
     display: none
   .news-detail
     justify-content: center
+  .news-detail__content
+    margin-right: 0
   
 .recent-news__divider
   border: 2.5px solid $green
+  background-color: $green
   border-radius: 2.5px
   height: 100%
   margin-right: 20px
