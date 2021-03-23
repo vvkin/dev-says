@@ -268,11 +268,6 @@ html {
   margin: 15px 0;
 }
 
-.examples {
-  -webkit-clip-path: polygon(0 160px, 100% 0, 100% calc(100% - 160px), 0 100%);
-          clip-path: polygon(0 160px, 100% 0, 100% calc(100% - 160px), 0 100%);
-}
-
 .examples__item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -291,6 +286,7 @@ html {
 .examples__item:first-of-type {
   -webkit-transform: translateY(-300px);
           transform: translateY(-300px);
+  margin-top: 505px;
   margin-bottom: -300px;
   color: #080C0B;
 }
@@ -401,7 +397,7 @@ html {
   font-size: 18px;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 476px) {
   .links {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -509,5 +505,94 @@ html {
   padding-top: 130px;
   padding-bottom: 300px;
   text-align: center;
+}
+
+.news-detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-column-gap: 90px;
+          column-gap: 90px;
+  padding-top: 65px;
+  padding-bottom: 250px;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 160px), 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% calc(100% - 160px), 0 100%);
+}
+
+.news-detail__content {
+  width: 665px;
+}
+
+@media screen and (max-width: 1200px) {
+  .news-detail__content {
+    width: 500px;
+  }
+}
+
+.news-detail__img {
+  margin: 30px 0 35px 0;
+  width: inherit;
+}
+
+@media screen and (max-width: 576px) {
+  .news-detail__img {
+    width: calc(100vw - 70px);
+  }
+}
+
+.news-detail__text {
+  line-height: 23px;
+}
+
+.recent-news {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 992px) {
+  .recent-news {
+    display: none;
+  }
+  .news-detail {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.recent-news__divider {
+  border: 2.5px solid #25BB41;
+  border-radius: 2.5px;
+  height: 100%;
+  margin-right: 20px;
+}
+
+.recent-news__heading {
+  font-weight: bold;
+  color: #25BB41;
+  margin-bottom: 20px;
+}
+
+.recent-news__item {
+  margin-bottom: 25px;
+  width: 150px;
+}
+
+.recent-news__item:last-of-type {
+  margin-bottom: 0px;
+}
+
+.recent-news__date {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.recent-news__link {
+  font-size: 12px;
+  color: #25BB41;
 }
 /*# sourceMappingURL=main.css.map */
